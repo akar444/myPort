@@ -1,0 +1,12 @@
+{% for airport in airports %}
+<div class="airport-item row">
+    <div class="col-xs-8">
+      {{airport.name}}
+    </div>
+    <div class="col-xs-4">
+      <p>{{airport.city}}, {{airport.country}}</p>
+      <p>Elevation: {{airport.elev}}ft</p>
+      <p>Direct Flight: {{airport.direct_flights}}ft</p>
+    </div>
+</div>
+{% endfor %}
